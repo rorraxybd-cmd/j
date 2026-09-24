@@ -113,49 +113,125 @@
             position: relative;
             transform: translateZ(0);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid rgba(212, 175, 55, 0.08);
         }
 
         .hub-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.3);
         }
 
-        /* Rotating Loop Wrapper */
-        .loop-container {
+        /* Contextual Custom Luxury Visual Animations */
+        .visual-container {
             position: relative;
-            width: 55px;
-            height: 55px;
+            width: 65px;
+            height: 65px;
             margin: 12px 0;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .loop-spinner {
+        /* 1. Enterprise Solutions (Pulse Orbit Animation) */
+        .enterprise-visual {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px dashed rgba(212, 175, 55, 0.3);
+            border-radius: 50%;
+            animation: rotateHub 10s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .enterprise-visual::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--gold-solid);
+            border-radius: 50%;
+            top: -4px;
+            box-shadow: 0 0 10px var(--gold-solid);
+        }
+
+        /* 2. Software & Tools (Tech Radar Scan Animation) */
+        .software-visual {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, transparent 70%, rgba(212, 175, 55, 0.4));
+            animation: spin 2s linear infinite;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* 3. Accounting Lifecycle (Financial Balance / Pulse Ring) */
+        .accounting-visual {
             position: absolute;
             width: 100%;
             height: 100%;
             border: 3px solid rgba(255, 255, 255, 0.05);
             border-top: 3px solid var(--gold-solid);
+            border-bottom: 3px solid var(--gold-solid);
             border-radius: 50%;
-            animation: spin 1s linear infinite;
-            will-change: transform;
+            animation: spinReverse 3s linear infinite;
         }
 
-        .loop-center-text {
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
+        /* 4. Wholesale Store (B2B Global Network Pulse) */
+        .wholesale-visual {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
+            animation: pulseGlow 2s ease-in-out infinite;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+
+        /* 5. Retail Store (B2C Dynamic Shopping Bag / Orbit) */
+        .retail-visual {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morphShape 6s ease-in-out infinite;
+        }
+
+        .visual-center-icon {
+            font-size: 1.2rem;
             background: var(--gold-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: 0.5px;
-            z-index: 1;
+            z-index: 2;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
         }
 
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes spinReverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @keyframes rotateHub {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(0.85); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+        }
+
+        @keyframes morphShape {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg); }
+            50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; transform: rotate(180deg); }
         }
 
         .hub-card h3 {
@@ -181,7 +257,7 @@
             padding: 9px 16px;
             border-radius: 8px;
             text-decoration: none;
-            transition: opacity 0.15s ease;
+            transition: opacity 0.15s ease, transform 0.15s ease;
             margin-top: 12px;
             width: 100%;
             text-align: center;
@@ -190,6 +266,7 @@
 
         .btn:hover {
             opacity: 0.9;
+            transform: scale(1.02);
         }
 
         /* Brand Logo Anchor Row & Marquee */
@@ -295,6 +372,7 @@
             border-radius: 14px;
             padding: 20px;
             transition: transform 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
         .about-card h3 {
@@ -318,6 +396,7 @@
             background: rgba(212, 175, 55, 0.03);
             border-radius: 14px;
             padding: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .ceo-signature-box h3 {
@@ -380,11 +459,13 @@
             flex: 1;
             text-align: center;
             min-width: 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .policy-btn:hover {
             background: rgba(212, 175, 55, 0.12);
             color: var(--gold-solid);
+            border-color: var(--gold-solid);
         }
 
         /* Social Media & Contact Section */
@@ -583,9 +664,9 @@
                 <!-- 1. Enterprise Solutions -->
                 <div class="hub-card">
                     <h3>ENTERPRISE SOLUTIONS</h3>
-                    <div class="loop-container">
-                        <div class="loop-spinner"></div>
-                        <div class="loop-center-text">HUB</div>
+                    <div class="visual-container">
+                        <div class="enterprise-visual"></div>
+                        <i class="fa-solid fa-building-shield visual-center-icon"></i>
                     </div>
                     <a href="https://s.rorraxy.com" class="btn">Explore</a>
                 </div>
@@ -593,19 +674,19 @@
                 <!-- 2. Software & Tools -->
                 <div class="hub-card">
                     <h3>SOFTWARE & TOOLS</h3>
-                    <div class="loop-container">
-                        <div class="loop-spinner"></div>
-                        <div class="loop-center-text">TOOL</div>
+                    <div class="visual-container">
+                        <div class="software-visual"></div>
+                        <i class="fa-solid fa-laptop-code visual-center-icon"></i>
                     </div>
                     <a href="https://t.rorraxy.com" class="btn">View</a>
                 </div>
 
-                <!-- 3. Schitech Academy -->
+                <!-- 3. Accounting Lifecycle -->
                 <div class="hub-card">
                     <h3>ACCOUNTING LIFECYCLE</h3>
-                    <div class="loop-container">
-                        <div class="loop-spinner"></div>
-                        <div class="loop-center-text">EDU</div>
+                    <div class="visual-container">
+                        <div class="accounting-visual"></div>
+                        <i class="fa-solid fa-file-invoice-dollar visual-center-icon"></i>
                     </div>
                     <a href="https://a.rorraxy.com" class="btn">Enroll</a>
                 </div>
@@ -613,9 +694,9 @@
                 <!-- 4. Wholesale Store -->
                 <div class="hub-card">
                     <h3>WHOLESALE STORE</h3>
-                    <div class="loop-container">
-                        <div class="loop-spinner"></div>
-                        <div class="loop-center-text">B2B</div>
+                    <div class="visual-container">
+                        <div class="wholesale-visual"></div>
+                        <i class="fa-solid fa-boxes-stacked visual-center-icon"></i>
                     </div>
                     <a href="https://bb.rorraxy.com" class="btn">Bulk Shop Now</a>
                 </div>
@@ -623,9 +704,9 @@
                 <!-- 5. Retail Store -->
                 <div class="hub-card">
                     <h3>RETAIL STORE</h3>
-                    <div class="loop-container">
-                        <div class="loop-spinner"></div>
-                        <div class="loop-center-text">B2C</div>
+                    <div class="visual-container">
+                        <div class="retail-visual"></div>
+                        <i class="fa-solid fa-bag-shopping visual-center-icon"></i>
                     </div>
                     <a href="https://rorraxy.com" class="btn">Shop Now</a>
                 </div>
@@ -746,7 +827,7 @@
             <p class="social-subtitle-sub">Join our official global connect and community networks</p>
             
             <div class="social-grid-wrapper">
-                <!-- ওপরে ৪টি সোশ্যাল মিডিয়া আইকন -->
+                <!-- ওপরে ৪টি সোশ্যাল মিডিয়া আইকন -->
                 <div class="social-row-top">
                     <a href="https://www.youtube.com/@rorraxy" target="_blank" class="social-btn">
                         <i class="fa-brands fa-youtube"></i> YouTube
@@ -762,7 +843,7 @@
                     </a>
                 </div>
 
-                <!-- নিচে ৪টি সোশ্যাল মিডিয়া আইকন (স্ন্যাপচ্যাটসহ) -->
+                <!-- নিচে ৪টি সোশ্যাল মিডিয়া আইকন (স্ন্যাপচ্যাটসহ) -->
                 <div class="social-row-bottom">
                     <a href="https://www.snapchat.com/add/rorraxy" target="_blank" class="social-btn">
                         <i class="fa-brands fa-snapchat"></i> Snapchat
