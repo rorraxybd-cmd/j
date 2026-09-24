@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <title>Buyer Terms & Conditions - rorraxy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- লোগো ফেভিকন -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+
+    <!-- পপিন্স ফন্ট -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-retail: #030305;
+            --card-retail: #0a0a0e;
+            --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            --gold-solid: #d4af37;
+            --text-white: #ffffff;
+            --text-gray: #a0a0ab;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        html, body { 
+            width: 100%; max-width: 100%; overflow-x: hidden; 
+            background: var(--bg-retail) !important; 
+            color: var(--text-white); font-family: var(--font-main); 
+            min-height: 100vh; font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+        
+        body { padding: 40px 16px; text-transform: uppercase !important; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        /* Main Container */
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Top Header & Back Button */
+        .page-header {
+            text-align: center;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* লোগো সাইজ */
+        .hero-logo-img {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+        }
+
+        /* টাইটেল দুই লাইনে সুন্দরভাবে দেখানোর জন্য স্টাইল */
+        .page-header h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        .page-header h1 span {
+            display: block;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(15, 15, 20, 0.9);
+            color: var(--gold-solid);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+        }
+
+        .back-home-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold-solid);
+        }
+
+        /* Policy Content Box */
+        .policy-card {
+            background: var(--card-retail);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .policy-intro {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-transform: none !important;
+        }
+
+        .policy-section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-text {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-transform: none !important;
+        }
+
+        .policy-text strong {
+            color: var(--text-white);
+        }
+
+        /* Footer / Return Button */
+        .footer-action {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .policy-card {
+                padding: 25px 15px;
+            }
+            .page-header h1 {
+                font-size: 1.35rem;
+            }
+            .hero-logo-img {
+                width: 105px;
+                height: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- Header Section -->
+        <header class="page-header">
+            <a href="index.html" class="back-home-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+            <img src="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG" alt="Rorraxy Logo" class="hero-logo-img">
+            <h1>
+                Buyer Terms 
+                <span>& Conditions</span>
+            </h1>
+        </header>
+
+        <!-- Content Section -->
+        <main class="policy-card">
+            <p class="policy-intro">
+                Welcome to our Global Ecosystem. Please read these Terms & Conditions carefully before browsing, placing an order, or purchasing any products through our platform.
+            </p>
+
+            <!-- Section 1 -->
+            <h3 class="policy-section-title">1. Acceptance of Terms</h3>
+            <p class="policy-text">
+                By accessing our platform, creating an account, or completing a purchase, you agree to be legally bound by these Terms & Conditions. If you do not agree with any part of these terms, you must refrain from using our platform and services.
+            </p>
+
+            <!-- Section 2 -->
+            <h3 class="policy-section-title">2. Ordering, Pricing & Payments</h3>
+            <p class="policy-text">
+                <strong>Order Placement:</strong> All orders placed are subject to our verification, acceptance, and product availability. We reserve the right to cancel or refuse any order due to pricing errors, stock limitations, or security checks.
+            </p>
+            <p class="policy-text">
+                <strong>Payment Terms:</strong> All transactions must be completed securely using our approved international credit/debit card payment gateways. Orders are processed only after payment confirmation.
+            </p>
+
+            <!-- Section 3 -->
+            <h3 class="policy-section-title">3. Shipping, Returns & Return Delivery Charges</h3>
+            <p class="policy-text">
+                <strong>Global Delivery:</strong> We ensure secure worldwide shipping through our integrated fulfillment network. Estimated delivery times are provided for guidance purposes.
+            </p>
+            <p class="policy-text">
+                <strong>Return Shipping Fees & Charges:</strong> In the event of a product return, all return shipping, transit, and delivery transport costs must be borne entirely by the customer (buyer). The return transport fee will not be covered or reimbursed by the platform under standard return scenarios.
+            </p>
+
+            <!-- Section 4 -->
+            <h3 class="policy-section-title">4. Refunds for Defective or Incorrect Products</h3>
+            <p class="policy-text">
+                <strong>Eligibility for Product Refund:</strong> Customers are eligible to receive a full refund for the product price only if the delivered item is verified to be of inferior quality, defective, or significantly different from what was ordered (e.g., wrong item or description mismatch).
+            </p>
+            <p class="policy-text">
+                <strong>Inspection & Processing:</strong> Returned products must pass our quality inspection. Once approved, the product cost will be refunded through the original payment method. Please note that original or return shipping charges are generally non-refundable unless stated otherwise by consumer protection laws.
+            </p>
+
+            <!-- Section 5 -->
+            <h3 class="policy-section-title">5. Limitation of Liability</h3>
+            <p class="policy-text">
+                Our platform operates as a global multi-vendor ecosystem. We are not liable for any indirect, incidental, or consequential losses arising from third-party courier delays, misuse of products, or external operational disruptions.
+            </p>
+
+            <div class="footer-action">
+                <a href="index.html" class="back-home-btn">
+                    <i class="fa-solid fa-house"></i> Return to Ecosystem Hub
+                </a>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
