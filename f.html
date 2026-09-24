@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <title>Affiliate Program Terms & Conditions - rorraxy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- লোগো ফেভিকন -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+
+    <!-- পপিন্স ফন্ট -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-retail: #030305;
+            --card-retail: #0a0a0e;
+            --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            --gold-solid: #d4af37;
+            --text-white: #ffffff;
+            --text-gray: #a0a0ab;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        html, body { 
+            width: 100%; max-width: 100%; overflow-x: hidden; 
+            background: var(--bg-retail) !important; 
+            color: var(--text-white); font-family: var(--font-main); 
+            min-height: 100vh; font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+        
+        body { padding: 40px 16px; text-transform: uppercase !important; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        /* Main Container */
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Top Header & Back Button */
+        .page-header {
+            text-align: center;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* লোগো সাইজ */
+        .hero-logo-img {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+        }
+
+        /* টাইটেল দুই লাইনে সুন্দরভাবে দেখানোর জন্য স্টাইল */
+        .page-header h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        .page-header h1 span {
+            display: block;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(15, 15, 20, 0.9);
+            color: var(--gold-solid);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+        }
+
+        .back-home-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold-solid);
+        }
+
+        /* Policy Content Box */
+        .policy-card {
+            background: var(--card-retail);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .policy-intro {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-transform: none !important;
+        }
+
+        .policy-section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-text {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-transform: none !important;
+        }
+
+        .policy-text strong {
+            color: var(--text-white);
+        }
+
+        /* List Items styling */
+        .policy-list {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            text-transform: none !important;
+        }
+
+        .policy-list li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        /* Footer / Return Button */
+        .footer-action {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .policy-card {
+                padding: 25px 15px;
+            }
+            .page-header h1 {
+                font-size: 1.35rem;
+            }
+            .hero-logo-img {
+                width: 105px;
+                height: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- Header Section -->
+        <header class="page-header">
+            <a href="index.html" class="back-home-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+            <img src="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG" alt="Rorraxy Logo" class="hero-logo-img">
+            <h1>
+                Affiliate Program 
+                <span>Terms & Conditions</span>
+            </h1>
+        </header>
+
+        <!-- Content Section -->
+        <main class="policy-card">
+            <p class="policy-intro">
+                Welcome to the Global Affiliate Program. Please read these Terms & Conditions carefully before registering, promoting, or participating in our affiliate ecosystem.
+            </p>
+
+            <!-- Section 1 -->
+            <h3 class="policy-section-title">1. Acceptance of Terms</h3>
+            <p class="policy-text">
+                By accessing or participating in the Global Affiliate Program, you acknowledge that you have read, understood, and unconditionally agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you are strictly prohibited from participating in the program.
+            </p>
+
+            <!-- Section 2 -->
+            <h3 class="policy-section-title">2. Program Eligibility & Seller Restrictions</h3>
+            <p class="policy-text">
+                <strong>Application Review:</strong> Participation in the affiliate program is subject to a formal review and approval process. We reserve the right to accept or reject any application at our sole discretion without providing explicit justification.
+            </p>
+            <p class="policy-text">
+                <strong>Exclusion of Platform Vendors/Sellers:</strong> To maintain absolute market integrity, transparency, and an unbiased commercial environment, active vendors or registered sellers operating within our ecosystem are strictly prohibited from participating as affiliates. Sellers cannot generate referral links, earn commissions, or claim rewards for any transactions or user acquisitions within the platform.
+            </p>
+            <p class="policy-text">
+                <strong>Account Integrity:</strong> Affiliates must maintain accurate, up-to-date account details, contact information, and valid payout methods. Failure to provide correct information may result in suspended payouts or immediate account termination.
+            </p>
+
+            <!-- Section 3 -->
+            <h3 class="policy-section-title">3. Promotion & Marketing Standards</h3>
+            <p class="policy-text">
+                <strong>Authorized Practices:</strong> Affiliates are permitted to promote our platform, services, and offerings through legitimate, ethical, and legal marketing channels, including personal blogs, social media networks, and approved email newsletters.
+            </p>
+            <p class="policy-text">
+                <strong>Prohibited Conduct:</strong> The following promotional methods are strictly forbidden and will result in instant account suspension, forfeiture of unpaid earnings, and potential legal action:
+            </p>
+            <ul class="policy-list">
+                <li>Spamming, unsolicited mass messaging, or deceptive marketing tactics.</li>
+                <li>Misleading advertisements, false claims, or unauthorized representation of our brand.</li>
+                <li>Trademark infringement, copyright violations, or bidding on our brand keywords/trademarks on paid search engines without prior written authorization.</li>
+                <li>Engaging in fraudulent traffic generation, self-referrals, or artificial transaction manipulation.</li>
+            </ul>
+
+            <!-- Section 4 -->
+            <h3 class="policy-section-title">4. Commissions, Validation & Payouts</h3>
+            <p class="policy-text">
+                <strong>Commission Earning:</strong> Affiliates will earn commissions based strictly on qualified, verified, and completed transactions generated exclusively through their designated, unique tracking links in accordance with active tier schedules.
+            </p>
+            <p class="policy-text">
+                <strong>Validation Period:</strong> All generated sales are subject to a standard fraud-check and verification period. Commissions are only validated for completed, non-canceled, and non-refunded orders. Any disputed, fraudulent, or refunded transaction will be permanently excluded from commission calculations.
+            </p>
+            <p class="policy-text">
+                <strong>Payout Thresholds & Cycles:</strong> Earnings are disbursed according to established financial cycles, provided the affiliate's account balance successfully reaches or exceeds the mandatory minimum payout threshold.
+            </p>
+
+            <!-- Section 5 -->
+            <h3 class="policy-section-title">5. Termination & Liability</h3>
+            <p class="policy-text">
+                <strong>Termination Rights:</strong> Either party may terminate the affiliate partnership at any time, with or without cause. Any breach of these terms will result in immediate termination of the affiliate account without prior notice.
+            </p>
+            <p class="policy-text">
+                <strong>Independent Contractor Status:</strong> Affiliates operate strictly as independent third-party contractors. You are solely responsible for compliance with all local laws, business regulations, and the reporting or payment of any taxes arising from your affiliate earnings.
+            </p>
+            <p class="policy-text">
+                <strong>Modifications:</strong> We reserve the right to modify, amend, or update these terms at any time. Continued participation in the program constitutes your binding acceptance of any updated policies.
+            </p>
+
+            <div class="footer-action">
+                <a href="index.html" class="back-home-btn">
+                    <i class="fa-solid fa-house"></i> Return to Ecosystem Hub
+                </a>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
