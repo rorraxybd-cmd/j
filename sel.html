@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <title>Seller Terms & Conditions - rorraxy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- লোগো ফেভিকন -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG">
+
+    <!-- পপিন্স ফন্ট -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-retail: #030305;
+            --card-retail: #0a0a0e;
+            --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            --gold-solid: #d4af37;
+            --text-white: #ffffff;
+            --text-gray: #a0a0ab;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        html, body { 
+            width: 100%; max-width: 100%; overflow-x: hidden; 
+            background: var(--bg-retail) !important; 
+            color: var(--text-white); font-family: var(--font-main); 
+            min-height: 100vh; font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+        
+        body { padding: 40px 16px; text-transform: uppercase !important; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        /* Main Container */
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Top Header & Back Button */
+        .page-header {
+            text-align: center;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* লোগো সাইজ */
+        .hero-logo-img {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+        }
+
+        /* টাইটেল দুই লাইনে সুন্দরভাবে দেখানোর জন্য স্টাইল */
+        .page-header h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        .page-header h1 span {
+            display: block;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(15, 15, 20, 0.9);
+            color: var(--gold-solid);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+        }
+
+        .back-home-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold-solid);
+        }
+
+        /* Policy Content Box */
+        .policy-card {
+            background: var(--card-retail);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .policy-intro {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-transform: none !important;
+        }
+
+        .policy-section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-text {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-transform: none !important;
+        }
+
+        .policy-text strong {
+            color: var(--text-white);
+        }
+
+        /* Footer / Return Button */
+        .footer-action {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .policy-card {
+                padding: 25px 15px;
+            }
+            .page-header h1 {
+                font-size: 1.35rem;
+            }
+            .hero-logo-img {
+                width: 105px;
+                height: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- Header Section -->
+        <header class="page-header">
+            <a href="index.html" class="back-home-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+            <img src="https://lh3.googleusercontent.com/d/1qyOXxZ8s2cJMEo66NDE4BdoxiC4hy_sG" alt="Rorraxy Logo" class="hero-logo-img">
+            <h1>
+                Seller Terms 
+                <span>& Conditions</span>
+            </h1>
+        </header>
+
+        <!-- Content Section -->
+        <main class="policy-card">
+            <p class="policy-intro">
+                Welcome to our Global Eco-Luxury Ecosystem. By registering, onboarding, or listing products as a vendor/seller on our platform, you agree to adhere strictly to the following binding terms and conditions designed to maintain our premium marketplace standards.
+            </p>
+
+            <!-- Section 1 -->
+            <h3 class="policy-section-title">1. Mandatory 100% Eco-Friendly Compliance (Zero Plastic Policy)</h3>
+            <p class="policy-text">
+                <strong>Strict Eco-Friendly Products Only:</strong> All products listed and supplied by sellers must be strictly eco-friendly, sustainable, and natural.
+            </p>
+            <p class="policy-text">
+                <strong>Zero Plastic Policy:</strong> We maintain a strict zero-tolerance policy against plastics. No plastic materials, synthetic derivatives, single-use plastics, or non-biodegradable components are permitted in either the products themselves or their constituent parts. Violation of this rule will result in immediate permanent delisting and severe penalties.
+            </p>
+
+            <!-- Section 2 -->
+            <h3 class="policy-section-title">2. Mandatory Authenticity & Zero Tolerance for Counterfeits</h3>
+            <p class="policy-text">
+                <strong>100% Authentic & Genuine:</strong> All sellers must exclusively provide authentic, high-grade, and original items. We maintain a zero-tolerance policy towards counterfeit, replica, or low-grade substitutes.
+            </p>
+            <p class="policy-text">
+                <strong>Legal Liability:</strong> Supplying non-authentic items will result in immediate account termination, forfeiture of all funds, and potential legal action for brand infringement.
+            </p>
+
+            <!-- Section 3 -->
+            <h3 class="policy-section-title">3. Premium Eco-Luxury Quality Assurance</h3>
+            <p class="policy-text">
+                <strong>High-End Standards:</strong> Because our ecosystem specializes in premium eco-luxury goods, every item supplied must reflect supreme craftsmanship, natural purity, and top-tier durability.
+            </p>
+            <p class="policy-text">
+                <strong>Prohibition of Inferior Goods:</strong> Low-quality, defective, or sub-standard products are strictly forbidden. Every item undergoes rigorous quality checks before reaching the buyer.
+            </p>
+
+            <!-- Section 4 -->
+            <h3 class="policy-section-title">4. Sustainable Luxury Packaging & Presentation</h3>
+            <p class="policy-text">
+                <strong>Eco-Luxury Unboxing Experience:</strong> To align with our luxury and sustainability ethos, sellers must use 100% biodegradable, recycled, or eco-friendly luxury packaging (such as premium recycled paper boxes, organic cotton/jute pouches, and plant-based tapes).
+            </p>
+            <p class="policy-text">
+                <strong>No Plastic Packaging:</strong> Plastic bubble wrap, plastic tapes, or non-recyclable synthetic wraps are strictly banned. Packaging must protect the item while ensuring a pristine, showroom-quality unboxing experience.
+            </p>
+
+            <!-- Section 5 -->
+            <h3 class="policy-section-title">5. Fulfillment & Account Penalties</h3>
+            <p class="policy-text">
+                <strong>Timely Dispatch:</strong> Sellers are required to process, sustainably pack, and dispatch confirmed orders within the platform's stipulated timeframe.
+            </p>
+            <p class="policy-text">
+                <strong>Account Suspension:</strong> Any violation of our eco-friendly mandates, inclusion of plastic elements, or delivery of inferior quality items will result in immediate account suspension, withholding of payouts, and permanent removal from the platform.
+            </p>
+
+            <div class="footer-action">
+                <a href="index.html" class="back-home-btn">
+                    <i class="fa-solid fa-house"></i> Return to Ecosystem Hub
+                </a>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
